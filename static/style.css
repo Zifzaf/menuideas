@@ -14,14 +14,14 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 800px);
     grid-gap: 20px; /* Add spacing between the cards */
     justify-content: space-between; /* Distribute remaining space between columns */
 }
@@ -31,8 +31,8 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    aspect-ratio: 1;
     position: relative;
 }
 
@@ -42,18 +42,17 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 62px;
     font-weight: bold;
     color: var(--accent-color);
 }
 
 p {
-    font-size: 20px;
+    font-size: 62px;
     font-weight: bold;
 }
 
 /* Additional styling for cards */
 .card p {
     color: var(--text-color);
-    font-weight: normal;
 }
