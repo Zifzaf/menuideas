@@ -1,0 +1,59 @@
+:root {
+    --background: #FFF4F4;
+    --text-color: #606C5D;
+    --light-color: #F7E6C4;
+    --accent-color: #F1C376;
+}
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 20px; /* Add spacing between the cards */
+    justify-content: space-between; /* Distribute remaining space between columns */
+}
+
+.card {
+    background-color: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Additional styling for cards */
+.card p {
+    color: var(--text-color);
+    font-weight: normal;
+}

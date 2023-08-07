@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Ideas</h1>
+        <div class="card-container">
+            {% for menu_item in menu_items %}
+            <div class="card">
+                <p>{{ menu_item[0] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
