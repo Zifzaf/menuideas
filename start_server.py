@@ -31,6 +31,8 @@ if __name__ == "__main__":
     server_thread = threading.Thread(target=start_server)
     server_thread.start()
 
+    run_crawler()
+
     # Schedule crawler to run once a day
     schedule.every().day.at("02:00").do(run_crawler)
 

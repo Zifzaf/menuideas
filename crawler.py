@@ -4,7 +4,7 @@ import sqlite3
 
 
 def create_database():
-    conn = sqlite3.connect("menu.db")
+    conn = sqlite3.connect("db/menu.db")
     cursor = conn.cursor()
     cursor.execute(
         """CREATE TABLE IF NOT EXISTS menus (menu TEXT NOT NULL PRIMARY KEY)"""
@@ -14,7 +14,7 @@ def create_database():
 
 
 def insert_menu(menu_item):
-    conn = sqlite3.connect("menu.db")
+    conn = sqlite3.connect("db/menu.db")
     cursor = conn.cursor()
     try:
         cursor.execute("INSERT INTO menus (menu) VALUES (?)", (menu_item,))

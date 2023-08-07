@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    conn = sqlite3.connect("menu.db")
+    conn = sqlite3.connect("db/menu.db")
     cursor = conn.cursor()
     cursor.execute("SELECT menu FROM menus")
     menu_items = cursor.fetchall()
