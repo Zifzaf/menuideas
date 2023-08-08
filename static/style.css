@@ -11,19 +11,23 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color);
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh;
 }
 
 .container {
     width: 90%;
-    margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 800px);
-    grid-gap: 20px; /* Add spacing between the cards */
-    justify-content: space-between; /* Distribute remaining space between columns */
+    grid-template-columns: repeat(auto-fill, minmax(780px, 1fr));
+    gap: 20px; 
+    justify-items: center; /* Center the cards horizontally */
 }
 
 .card {
@@ -31,9 +35,11 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 100%;
+    width: 780px;
     aspect-ratio: 1;
     position: relative;
+    text-align: center;
+    margin: 10px; /* Margin between cards */
 }
 
 .card p {
